@@ -1,0 +1,36 @@
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-3">
+            <p class="sm">Use the form below to add new computer part.</p>
+            <form [formGroup]="rForm" (ngSubmit)="postPart()">
+                <div class="form-group mt-3">
+                    <label for="Name">Name</label>
+                    <input class="form-control" type="text" formControlName="name" placeholder="Enter the name of the current part"/>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="Type">Type</label>
+                    <select class="form-control" formControlName="type">
+                        <option value="cpu">CPU</option>
+                        <option value="gpu">GPU</option>
+                        <option value="motherboard">Motherboard</option>
+                        <option value="ram">Ram</option>
+                        <option value="ssd">Ssd</option>
+                        <option value="hdd">Hdd</option>
+                        <option value="psu">Power supply unit</option>
+                        <option value="waterCooling">Water cooling</option>
+                      </select>
+            
+                </div>
+                <div class="form-group mt-3">
+                    <label for="ImageUrl">ImageUrl</label>
+                    <input class="form-control" type="text" formControlName="ImageUrl" />
+                    <small class="form-text text-muted text-red" *ngIf="!rForm.controls['ImageUrl'].valid && rForm.controls['ImageUrl'].touched">Please uploade an image of the car.</small>
+                  </div>
+                  <input type="submit" class="btn btn-primary mt-3" value="Submit Form" [disabled]="!rForm.valid"/>
+          
+            </form>
+        </div>
+    </div>
+</div>
+
+  
