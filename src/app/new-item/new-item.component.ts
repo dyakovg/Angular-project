@@ -29,6 +29,7 @@ export class NewItemComponent implements OnInit {
  { 
   this.rForm = this.fb.group({
     name: ["", Validators.required],
+    desc: ["", Validators.required],
     type: ["", Validators.required],
     year: ["", Validators.required],
     status: ["", Validators.required],
