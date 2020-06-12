@@ -1,5 +1,6 @@
 export class Parts {
     _id: string;
+    id?: number;
     name: string;
     desc: string;
     type: string;

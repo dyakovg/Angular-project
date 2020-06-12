@@ -20,7 +20,14 @@ export class ItemsDetailsComponent implements OnInit {
    }
 
   ngOnInit(){
-    this.partsService.getPartById(this.partId);
+    this.activatedRoute.params.subscribe(params => {
+      if(params.id) {
+        this.partId = params.id;
+        this.partsService.getPartById(this.partId).subscribe((part: Parts) => {
+          this.part = part;
+        });
+      }
+    })
   }
 
   deletePart() {
@@ -30,7 +37,7 @@ export class ItemsDetailsComponent implements OnInit {
   }
 
   toHome() {
-    this.router.navigate(["Home"]);
+    this.router.navigate(["/home"]);
   }
 
 }

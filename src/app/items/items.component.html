@@ -16,7 +16,7 @@
       <li class="list-group-item">Year of prod: {{ part.year }}</li>
     </ul>
     <div class="partd-body">
-      <a routerLink="/Details/{{ part._id }}" class="partd-link">Details</a>
+      <a [routerLink]="['/details', part.id]" class="partd-link">Details</a>
     </div>
   </div>
   
