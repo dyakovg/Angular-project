@@ -12,6 +12,7 @@ import { ItemsComponent } from './items/items.component';
 import { ItemsDetailsComponent } from './items-details/items-details.component';
 import { EditItemComponent } from './edit-item/edit-item.component';
 import { DeleteItemComponent } from './delete-item/delete-item.component';
+import { ListItemsComponent } from './list-items/list-items.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { DeleteItemComponent } from './delete-item/delete-item.component';
     ItemsComponent,
     ItemsDetailsComponent,
     EditItemComponent,
-    DeleteItemComponent
+    DeleteItemComponent,
+    ListItemsComponent
   ],
   imports: [
     BrowserModule,

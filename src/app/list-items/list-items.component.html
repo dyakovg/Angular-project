@@ -1,0 +1,9 @@
+<div class="container" style="margin-top: 60px">
+    <h1>Available parts</h1>
+
+    <div class="row">
+        <div class="col-md-4" *ngFor="let part of parts">
+            <app-items [part]="part"></app-items>
+        </div>
+    </div>
+</div>

@@ -7,6 +7,7 @@ import { EditItemComponent } from "./edit-item/edit-item.component";
 import { DeleteItemComponent } from "./delete-item/delete-item.component";
 import { ItemsComponent } from "./items/items.component";
 import { ItemsDetailsComponent } from "./items-details/items-details.component";
+import { ListItemsComponent } from './list-items/list-items.component';
 
 
 
@@ -36,7 +37,7 @@ const routes: Routes = [
   },
   {
     path: "items",
-    component: ItemsComponent,
+    component: ListItemsComponent,
     data: { title: 'List of all computer parts' }
   },
   {
