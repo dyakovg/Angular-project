@@ -55,7 +55,7 @@ export class NewItemComponent implements OnInit {
   }
 
   toHome(){
-    this.router.navigate(["Home"]);
+    this.router.navigate(["/home"]);
   }
 
 }

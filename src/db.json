@@ -1,0 +1,31 @@
+{
+  "Parts": [
+    {
+      "name": "qwe",
+      "desc": "qweqwe",
+      "type": "cpu",
+      "year": "1111",
+      "ImageUrl": "http://www.omdbapi.com/src/poster.jpg",
+      "date": 1591964992477,
+      "id": 1
+    },
+    {
+      "name": "123",
+      "desc": "123123",
+      "type": "gpu",
+      "year": "1111",
+      "ImageUrl": "http://www.omdbapi.com/src/poster.jpg",
+      "date": 1591965091186,
+      "id": 2
+    },
+    {
+      "name": "123",
+      "desc": "123123",
+      "type": "gpu",
+      "year": "1111",
+      "ImageUrl": "http://www.omdbapi.com/src/poster.jpg",
+      "date": 1591965142335,
+      "id": 3
+    }
+  ]
+}
