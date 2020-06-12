@@ -6,4 +6,5 @@ export class Parts {
     year: string;
     status: string;
     updated: Date;
+    ImageUrl: string;
   }

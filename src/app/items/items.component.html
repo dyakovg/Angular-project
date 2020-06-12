@@ -1,1 +1,22 @@
-<p>items works!</p>
+<div class="partd mr-2 w-100">
+    <div class="img-container">
+      <img
+        class="partd-img-top img-fluid"
+        src="{{ part.ImageUrl }}"
+        alt="partd image cap"
+      />
+    </div>
+    <div class="partd-body">
+      <h5 class="partd-title">{{ part.name }}, {{ part.desc }}</h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        Type: {{ part.type }}
+      </li>
+      <li class="list-group-item">Year of prod: {{ part.year }}</li>
+    </ul>
+    <div class="partd-body">
+      <a routerLink="/Details/{{ part.id }}" class="partd-link">Details</a>
+    </div>
+  </div>
+  

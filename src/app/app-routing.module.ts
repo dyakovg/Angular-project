@@ -40,7 +40,7 @@ const routes: Routes = [
     data: { title: 'List of all computer parts' }
   },
   {
-    path: "items-details",
+    path: "items-details/:id",
     component: ItemsDetailsComponent,
     data: { title: 'Detailed view of computer part' }
   },

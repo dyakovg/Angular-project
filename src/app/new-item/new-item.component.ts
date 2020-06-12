@@ -32,7 +32,6 @@ export class NewItemComponent implements OnInit {
     desc: ["", Validators.required],
     type: ["", Validators.required],
     year: ["", Validators.required],
-    status: ["", Validators.required],
     ImageUrl: ["", Validators.required],
   });
 
